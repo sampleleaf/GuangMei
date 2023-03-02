@@ -24,6 +24,7 @@
 
 .container4 h3{
     padding: 10px;
+    white-space: nowrap;
 }
 
 .container5{
@@ -44,6 +45,7 @@
 
 .container5 p{
     text-align: left;
+    white-space: nowrap;
 }
 
 .mediaicon{
