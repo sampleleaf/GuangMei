@@ -1,0 +1,108 @@
+.frame3{
+    position: relative;
+    width: 94.5%; /*320px use 283px*/
+    margin: 30px auto;
+    /* border: 5px ridge rgb(191, 255, 128);*/
+    border: 5px ridge rgb(223, 255, 191);
+    background-image: linear-gradient(45deg, rgb(191, 255, 191), rgb(255, 255, 191));
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.frame3 > div{
+    position: absolute;
+    top: -2.5px; /*修正padding位移*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 9px;
+    background-image: linear-gradient(45deg, rgb(128, 255, 128), rgb(255, 255, 128));
+}
+
+.frame3 > div h3{
+    background-color: white;
+    border-radius: 5px;
+    padding: 5px 10px 5px 15px;
+    letter-spacing: 5px;
+}
+
+.frame-container3{
+    margin: 10px auto 0;
+    display: grid;
+    justify-items: center;
+}
+
+.frame-container3 li{
+    margin: 0 auto;
+}
+
+.frame-container3 li > p{
+    cursor: default;
+    text-align: center;
+    /* font-family: 'ZCOOL XiaoWei', sans-serif; */
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px auto;
+}
+
+.frame-container3 li span{
+    display: block;
+    width: 250px;
+    height: 250px;
+    /* padding-top: 70px; */
+    border: 5px inset rgba(191, 255, 128);
+    border-radius: 5px;
+    background-color: white;
+}
+
+.map{
+    width: 100%;
+    height: 100%;
+}
+
+.container3{
+    display: none;
+}
+
+@media ( min-width : 400px ){
+    .frame3{
+        width: 361.92px;
+    }
+}
+
+/*Small > 576px*/
+@media ( min-width : 576px ){
+    .frame3{
+        width: 528.25px;
+    }
+}
+
+/*Medium > 768px*/
+@media ( min-width : 768px ){
+    .frame3{
+        width: 709.7px;
+    }
+    .frame-container3{
+        grid-template-columns: 54% 46%;
+    }
+
+    .frame-container3 li:nth-child(2){
+        margin-top: 63px;
+    }
+
+    .container3{
+        display: grid;
+        grid-template-columns: 30px auto;
+        align-items: center;
+    }
+
+    .container3 div{
+        padding: 10px;
+    }
+    
+    .cut{
+        grid-column: 1 / 3;
+    }
+}

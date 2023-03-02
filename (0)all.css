@@ -1,0 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body{
+    position: relative;
+    background-image: url(picture/4403214_18410.jpg);
+}
+
+a{
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;/*href scroll*/
+}

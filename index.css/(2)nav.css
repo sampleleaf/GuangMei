@@ -1,0 +1,98 @@
+.rwd{
+    background-color: #eef6ff;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transition: all 0.3s;
+    transform: translate(-100%); /*@media*/
+}
+
+.rwd2{
+    background-color: #eef6ff;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.container2{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 80px 0 0 0;
+    transition: all 0.3s;
+}
+
+.container2 div a{
+    display: block;
+    padding: 15px 20px;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+@media ( max-width : 767px ){/*不讓hover效果影響768px以上*/
+    .container2 div a:hover{
+        background-color: #D0E6FF;
+        padding-left: 30px;
+    }
+    .rwd{
+        transition: transform 0s;/*避免縮放畫面(768px轉767px)產生奇怪動畫*/
+    }
+}
+
+/*Medium > 768px*/
+@media ( min-width : 768px ){
+    nav{
+        margin-top: 45px;
+    }
+    .rwd{
+        position: static;
+        height: auto;
+        transform: translate(0);
+        background-color: transparent;
+    }
+    .rwd2{
+        position: static;
+        height: auto;
+        background-color: transparent;
+    }
+    .container2{
+        width: 751px;
+        margin: 0 auto;
+        grid-template-columns: repeat(5,auto);
+        justify-content: space-around;
+        padding: 0;
+    }
+    .container2 div a{
+        font-weight: bold;
+        font-size: 18px;
+        position: relative;
+        transition: all 0.3s;
+    }
+    .container2 div:hover a{
+        transform: translate(0, -2px);
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    }
+    .container2 div a::after{
+        content: "";
+        position: absolute;
+        left: 17.5%;
+        bottom: 25%;
+        width: 0;
+        height: 2px;
+        background-color: blue;
+        transition: all 0.3s;
+    }
+    .container2 div a:hover::after{
+        width: 65%;
+    }
+    /* .container2 div:hover a{
+        color: rgb(50, 110, 200);
+    } */
+}

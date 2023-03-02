@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="台中, 光美, 眼鏡行">
+    <meta name="description" content="光美眼鏡行, 日本HOYA鏡片旗艦店">
+    <title>光美眼鏡行 | 日本HOYA鏡片 專業驗配店</title>
+    <!--favicon-->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2421/2421304.png">
+    <!--外部css-->
+    <link rel="stylesheet" href="(0)all.css">
+    <link rel="stylesheet" href="frame.css/(1)header.css">
+    <link rel="stylesheet" href="frame.css/(2)nav.css">
+    <link rel="stylesheet" href="frame.css/(3)sec.css">
+    <link rel="stylesheet" href="frame.css/(4)art.css">
+    <link rel="stylesheet" href="frame.css/(5)art2.css">
+    <link rel="stylesheet" href="frame.css/(6)footer.css">
+    <title>Document</title>
+    <!--googlefont-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <!--cdn-->
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div>
+                <img src="https://cdn-icons-png.flaticon.com/512/2421/2421304.png">
+            </div>
+            <div>
+                <h1>光美眼镜行</h1>
+            </div>
+            <div id="svgstyle" class="svgstyle">
+                <svg width="23" height="23">
+                    <rect x="2" y="3" width="19" height="3"/>
+                    <rect x="2" y="10" width="19" height="3"/>
+                    <rect x="2" y="17" width="19" height="3"/>
+                </svg>
+            </div>
+        </div>
+    </header>
+    <nav class="rwd">
+        <div id="hrefpop" class="container2">
+            <div><a href="index.html">返回首頁</a></div>
+            <div><a href="swan.html">Dr.Swan</a></div>
+            <div><a href="#">PARIM</a></div>
+            <div><a href="hawk.html">Hawk</a></div>
+            <div><a href="#footer">關於我們</a></div>
+        </div>
+    </nav>
+    <section>
+        <p class="hoya">PARIM</p>
+        <div class="slideshow">
+            <div class="changeimg" id="changeimg">
+                <img src="picture/parim/bg.jpg">
+                <img class="hide" src="picture/parim/bg2.jpg">
+                <img class="hide" src="picture/parim/bg3.jpg">
+            </div>
+            <div class="slideshowButton">
+                <div id="leftButton"><i class="fas fa-chevron-circle-left"></i></div>
+                <div id="slideshowDot">
+                    <svg class="dot" height="16" width="16">
+                        <circle cx="8" cy="8" r="5.4"/>
+                    </svg> 
+                    <svg class="dot" height="16" width="16">
+                        <circle cx="8" cy="8" r="5.4"/>
+                    </svg> 
+                    <svg class="dot" height="16" width="16">
+                        <circle cx="8" cy="8" r="5.4"/>
+                    </svg> 
+                </div>
+                <div id="rightButton"><i class="fas fa-chevron-circle-right"></i></i></div>
+            </div>
+        </div>
+    </section>
+    <br>
+    <article>
+        <form>
+            <fieldset class="filter">
+                <legend>篩選</legend>
+                <div class="select-container">
+                    <div>
+                        <input type="radio" id="all" name="frameSelector" checked>
+                        <label for="all">全部</label>
+                    </div>
+                    <!-- <div>
+                        <input type="radio" id="circle" name="frameSelector">
+                        <label for="circle">圓形</label>
+                    </div> -->
+                    <!-- <div>
+                        <input type="radio" id="boston" name="frameSelector">
+                        <label for="boston">波士頓形</label>
+                    </div> -->
+                    <div>
+                        <input type="radio" id="crown" name="frameSelector">
+                        <label for="crown">皇冠形</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="wellington" name="frameSelector">
+                        <label for="wellington">威靈頓形</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="square" name="frameSelector">
+                        <label for="square">方形</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="polygon" name="frameSelector">
+                        <label for="polygon">多邊形</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="browline" name="frameSelector">
+                        <label for="browline">眉框</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="half" name="frameSelector">
+                        <label for="half">半框</label>
+                    </div>
+                    <!-- <div>
+                        <input type="radio" id="none" name="frameSelector">
+                        <label for="none">無邊框</label>
+                    </div> -->
+                    <div>
+                        <input type="radio" id="sunglasses" name="frameSelector">
+                        <label for="sunglasses">墨鏡</label>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div id="imgGallery" class="container3">
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/71503/k2.jpg">
+                    <img src="picture/parim/71503/k2-2.jpg">
+                    <p>【71503】</p>
+                </div>
+            </div>
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/71524/b2.jpg">
+                    <img src="picture/parim/71524/b2-2.jpg">
+                    <p>【71524】</p>
+                </div>
+            </div>
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/72402/w1.jpg">
+                    <img src="picture/parim/72402/w1-2.jpg">
+                    <p>【72402】</p>
+                </div>
+            </div>
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/73525/k1.jpg">
+                    <img src="picture/parim/73525/k1-2.jpg">
+                    <p>【73525】</p>
+                </div>
+            </div>
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/76005/b1p.jpg">
+                    <img src="picture/parim/76005/b1p-2.jpg">
+                    <p>【76005】</p>
+                </div>
+            </div>
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/76007/g1p.jpg">
+                    <img src="picture/parim/76007/g1p-2.jpg">
+                    <p>【76007】</p>
+                </div>
+            </div>
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/76042/b2.jpg">
+                    <img src="picture/parim/76042/b2-2.jpg">
+                    <p>【76042】</p>
+                </div>
+            </div>
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/76044/n1.jpg">
+                    <img src="picture/parim/76044/n1-2.jpg">
+                    <p>【76044】</p>
+                </div>
+            </div>
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/76046/b1s.jpg">
+                    <img src="picture/parim/76046/b1s-2.jpg">
+                    <p>【76046】</p>
+                </div>
+            </div>
+            <div>
+                <div class="sunglasses">
+                    <img src="picture/parim/76047/b1s.jpg">
+                    <img src="picture/parim/76047/b1s-2.jpg">
+                    <p>【76047】</p>
+                </div>
+            </div>
+            <div>
+                <div class="crown">
+                    <img src="picture/parim/83438/w1.jpg">
+                    <img src="picture/parim/83438/w1-2.jpg">
+                    <p>【83438】</p>
+                </div>
+            </div>
+            <div>
+                <div class="square">
+                    <img src="picture/parim/84001/s1.jpg">
+                    <img src="picture/parim/84001/s1-2.jpg">
+                    <p>【84001】</p>
+                </div>
+            </div>
+            <div>
+                <div class="polygon">
+                    <img src="picture/parim/84003/b1.jpg">
+                    <img src="picture/parim/84003/b1-2.jpg">
+                    <p>【84003】</p>
+                </div>
+            </div>
+            <div>
+                <div class="polygon">
+                    <img src="picture/parim/84004/t1.jpg">
+                    <img src="picture/parim/84004/t1-2.jpg">
+                    <p>【84004】</p>
+                </div>
+            </div>
+            <div>
+                <div class="polygon">
+                    <img src="picture/parim/84010/w1.jpg">
+                    <img src="picture/parim/84010/w1-2.jpg">
+                    <p>【84010】</p>
+                </div>
+            </div>
+            <div>
+                <div class="square">
+                    <img src="picture/parim/84015/s1.jpg">
+                    <img src="picture/parim/84015/s1-2.jpg">
+                    <p>【84015】</p>
+                </div>
+            </div>
+            <div>
+                <div class="wellington">
+                    <img src="picture/parim/85006/b1.jpg">
+                    <img src="picture/parim/85006/b1-2.jpg">
+                    <p>【85006】</p>
+                </div>
+            </div>
+            <div>
+                <div class="square">
+                    <img src="picture/parim/85008/b1.jpg">
+                    <img src="picture/parim/85008/b1-2.jpg">
+                    <p>【85008】</p>
+                </div>
+            </div>
+            <div>
+                <div class="polygon">
+                    <img src="picture/parim/85009/s1.jpg">
+                    <img src="picture/parim/85009/s1-2.jpg">
+                    <p>【85009】</p>
+                </div>
+            </div>
+            <div>
+                <div class="browline">
+                    <img src="picture/parim/96014/n2-2.jpg">
+                    <img src="picture/parim/96014/n2-3.jpg">
+                    <p>【96014】</p>
+                </div>
+            </div>
+            <div>
+                <div class="half">
+                    <img src="picture/parim/PG81604/b1-2.jpg">
+                    <img src="picture/parim/PG81604/b1-3.jpg">
+                    <p>【PG81604】</p>
+                </div>
+            </div>
+            <div>
+                <div class="wellington">
+                    <img src="picture/parim/PR83603/b1-2.jpg">
+                    <img src="picture/parim/PR83603/b1-3.jpg">
+                    <p>【PR83603】</p>
+                </div>
+            </div>
+            <div>
+                <div class="crown">
+                    <img src="picture/parim/PR83605/b1-2.jpg">
+                    <img src="picture/parim/PR83605/b1-3.jpg">
+                    <p>【PR83605】</p>
+                </div>
+            </div>     
+        </div>
+        <!-- <div id="pages" class="pages"> -->
+            <!-- js button -->
+        <!-- </div> -->
+    </article>
+    <article>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/71503/k2.jpg"></div>
+                    <div><img src="picture/parim/71503/k2-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/71524/b2.jpg"></div>
+                    <div><img src="picture/parim/71524/b2-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/72402/w1.jpg"></div>
+                    <div><img src="picture/parim/72402/w1-2.jpg"></div>
+                </div>
+                <p>點選下方圖片來展示</p>
+                <div class="scrollPic">
+                    <div>
+                        <img src="picture/parim/72402/b1.jpg">
+                        <img class="hide" src="picture/parim/72402/b1-2.jpg">
+                    </div>
+                    <div>
+                        <img src="picture/parim/72402/w1.jpg">
+                        <img class="hide" src="picture/parim/72402/w1-2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/73525/k1.jpg"></div>
+                    <div><img src="picture/parim/73525/k1-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/76005/b1p.jpg"></div>
+                    <div><img src="picture/parim/76005/b1p-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/76007/g1p.jpg"></div>
+                    <div><img src="picture/parim/76007/g1p-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/76042/b2.jpg"></div>
+                    <div><img src="picture/parim/76042/b2-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/76044/n1.jpg"></div>
+                    <div><img src="picture/parim/76044/n1-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/76046/b1s.jpg"></div>
+                    <div><img src="picture/parim/76046/b1s-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/76047/b1s.jpg"></div>
+                    <div><img src="picture/parim/76047/b1s-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/83438/w1.jpg"></div>
+                    <div><img src="picture/parim/83438/w1-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/84001/s1.jpg"></div>
+                    <div><img src="picture/parim/84001/s1-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/84003/b1.jpg"></div>
+                    <div><img src="picture/parim/84003/b1-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/84004/t1.jpg"></div>
+                    <div><img src="picture/parim/84004/t1-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/84010/w1.jpg"></div>
+                    <div><img src="picture/parim/84010/w1-2.jpg"></div>
+                </div>
+                <p>點選下方圖片來展示</p>
+                <div class="scrollPic">
+                    <div>
+                        <img src="picture/parim/84010/b1.jpg">
+                        <img class="hide" src="picture/parim/84010/b1-2.jpg">
+                    </div>
+                    <div>
+                        <img src="picture/parim/84010/w1.jpg">
+                        <img class="hide" src="picture/parim/84010/w1-2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/84015/s1.jpg"></div>
+                    <div><img src="picture/parim/84015/s1-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/85006/b1.jpg"></div>
+                    <div><img src="picture/parim/85006/b1-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/85008/b1.jpg"></div>
+                    <div><img src="picture/parim/85008/b1-2.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/85009/s1.jpg"></div>
+                    <div><img src="picture/parim/85009/s1-2.jpg"></div>
+                </div>
+                <p>點選下方圖片來展示</p>
+                <div class="scrollPic">
+                    <div>
+                        <img src="picture/parim/85009/b1.jpg">
+                        <img class="hide" src="picture/parim/85009/b1-2.jpg">
+                    </div>
+                    <div>
+                        <img src="picture/parim/85009/s1.jpg">
+                        <img class="hide" src="picture/parim/85009/s1-2.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/96014/n2.jpg"></div>
+                    <div><img src="picture/parim/96014/n2-3.jpg"></div>
+                </div>
+                <p>點選下方圖片來展示</p>
+                <div class="scrollPic">
+                    <div>
+                        <img src="picture/parim/96014/n1.jpg">
+                        <img class="hide" src="picture/parim/96014/n1-3.jpg">
+                    </div>
+                    <div>
+                        <img src="picture/parim/96014/n2.jpg">
+                        <img class="hide" src="picture/parim/96014/n2-3.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/PG81604/b1.jpg"></div>
+                    <div><img src="picture/parim/PG81604/b1-3.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/PR83603/b1.jpg"></div>
+                    <div><img src="picture/parim/PR83603/b1-3.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+        <div class="pop hide">
+            <div class="crossPic"><i class="fas fa-times"></i></div>
+            <div class="divPop">
+                <div class="popMainPic">
+                    <div><img src="picture/parim/PR83605/b1.jpg"></div>
+                    <div><img src="picture/parim/PR83605/b1-3.jpg"></div>
+                </div>
+                <p>暫無其他顏色</p>
+                <div class="scrollPic"></div>
+            </div>
+        </div>
+    </article>
+    <footer id="footer">
+        <div class="container4">
+            <div class="area3">
+                <img src="https://cdn-icons-png.flaticon.com/512/2421/2421304.png"" alt="icon">
+                <h2>光美眼鏡行</h2>
+            </div>
+            <div>
+                <h3>聯絡我們</h3>
+                <div class="container5">
+                    <div><i class="fas fa-phone-square-alt"></i></div>
+                    <div><p>04-2360-1321</p></div>
+                    <div><i class="far fa-calendar-alt"></i></div>
+                    <div><p>星期一至星期六</p></div>
+                    <div><i class="fas fa-clock"></i></div>
+                    <div><p>10:15~22:00</p></div>
+                </div>
+            </div>
+            <div>
+                <h3>社群媒體</h3>
+                <div class="mediaicon"><a href="https://www.facebook.com/GuangMeiYanJingXing/"><i class="fab fa-facebook-square"></i></a></div>
+            </div>
+            <div class="area4">
+                <h3>圖片來源</h3>
+                <div>
+                    <a href="https://www.flaticon.com/free-icons/vision" title="vision icons">Vision icons created by wanicon - Flaticon</a>
+                </div>
+                <div>
+                    <a href="https://www.freepik.com/free-vector/white-background-with-triangle-patterns_4403214.htm#query=pattern&position=33&from_view=keyword">Image by starline</a> on Freepik
+                </div>
+                <!-- <div>
+                    <a href="https://www.freepik.com/free-vector/abstract-blue-geometric-shapes-background_6166980.htm#query=background&position=20&from_view=search&track=sph">Image by Harryarts</a> on Freepik
+                </div> -->
+            </div>
+        </div>
+        <div class="gotop"><a href="#"><i class="fas fa-chevron-circle-up"></i></a></div>
+        <p class="copyright">Copyright © 2023 Benny Chang. All rights reserved.</p>
+    </footer>
+    <script src="app2.js"></script>
+</body>
+</html>

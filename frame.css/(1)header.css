@@ -1,0 +1,89 @@
+header{
+    display: block;
+    height: 72px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px 10px;
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 1px 10px 0px rgba(0, 0, 0, 0.5);;
+}
+
+.container div:nth-child(1){
+    height: 23px;
+}
+
+.container div h1{
+    font-family: 'ZCOOL KuaiLe', sans-serif;
+    letter-spacing: 5px;
+    margin-left: 5px; /*彌補letter-spacing*/
+    font-weight: 100;
+    color: rgb(222, 236, 248);
+    /* color: rgb(255, 255, 128); */
+    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(0, 0, 255), 0 0 0.2em rgb(0, 0, 139);
+    /* text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 1em rgb(150, 150, 150), 0 0 0.2em rgb(0, 0, 0); */
+}
+
+.container div img{
+    width: 23px;
+    height: 23px;
+}
+
+.svgstyle{
+    fill: rgb(141, 220, 223);
+    /* fill: rgb(151, 151, 151); */
+    transition: all 0.3s;
+    height: 23px;
+    cursor: pointer;
+}
+
+.svgstyle:hover{
+    transform: rotate(90deg);
+}
+
+.svgstyle svg rect{
+    transition: all 0.3s;
+}
+
+.svgstyle2{
+    fill: rgb(0, 0, 0);
+}
+
+.svgstyle2 svg rect:nth-child(1){
+    /* transform: rotate(-45deg) translate(正右上負左下,正左上負右下)*/
+    transform: rotate(-45deg) translate(-11.5px,12px);
+}
+
+.svgstyle2 svg rect:nth-child(2){
+    opacity: 0;
+}
+
+.svgstyle2 svg rect:nth-child(3){
+    /* transform: rotate(45deg) translate(正右下負左上,正左下負右上)*/
+    transform: rotate(45deg) translate(5px,-18.5px);
+}
+
+/*Medium > 768px*/
+@media ( min-width : 768px ){
+    .container{
+        background-color: transparent;
+        box-shadow: none;
+        position: static;
+        grid-template-columns: auto;
+        row-gap: 20px;
+    }
+    .container div img{
+        width: 35px;
+        height: 35px;
+    }
+    .svgstyle{
+        display: none;
+    }
+}

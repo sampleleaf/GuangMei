@@ -1,0 +1,138 @@
+.pop{
+    position: fixed;
+    z-index: 4;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.crossPic{
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    transform: scale(2);
+    color: white;
+    cursor: pointer;
+}
+
+.crossPic svg{
+    transition: all 0.3s;
+}
+
+.crossPic:hover svg{
+    transform: rotate(180deg);
+}
+
+.divPop{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    animation-name: pop;
+    animation-duration: 0.5s;
+    width: 228px ;
+    margin: 0 auto;
+    background-color: white;
+}
+
+@keyframes pop{
+    from {transform:scale(0) translateY(-200%)} 
+    to {transform:scale(1) translateY(-50%)}
+}
+
+.popMainPic{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.popMainPic div{
+    height: 210px;
+    margin: 7px 0 0 0;
+}
+
+.popMainPic div img{
+    width: 210px;
+    border: 1px solid black;
+}
+
+.pop p{
+    width: 226px;
+    margin: 5px auto;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding-left: 2px;
+}
+
+.scrollPic{
+    width: 226px;
+    margin: 0 auto;
+    padding: 0 8px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow-x: auto;
+}
+
+.scrollPic div img{
+    cursor: pointer;
+    align-self: center;
+    width: 64px;
+    border: 1px solid black;
+}
+
+/*Small > 576px*/
+@media ( min-width : 576px ){
+    .divPop{
+        width: 442px;
+    }
+    .popMainPic{
+        justify-content: space-evenly;
+        grid-template-columns: repeat(2, auto);
+    }
+    .pop p{
+        width: 442px;
+        background-color: rgb(209, 209, 209);
+    }
+    .scrollPic{
+        width: 442px;
+    }
+    .scrollPic div img{
+        width: 80px;
+    }
+}
+
+/*Medium > 768px*/
+@media ( min-width : 768px ){
+    .divPop{
+        width: 660px;
+    }
+    .popMainPic{
+        justify-content: space-evenly;
+        grid-template-columns: repeat(2, auto);
+    }
+    .popMainPic div{
+        height: 318px;
+        margin: 7px 0 0 0;
+    }
+    
+    .popMainPic div img{
+        width: 318px;
+    }
+    .pop p{
+        width: 660px;
+        background-color: rgb(209, 209, 209);
+    }
+    .scrollPic{
+        width: 660px;
+    }
+    .scrollPic div img{
+        width: 120px;
+    }
+}
