@@ -83,9 +83,9 @@ document.querySelectorAll('input[name="frameSelector"]').forEach(function(frameS
     frameSelect.addEventListener('change',function(e){
         let select = e.target.id; //e.target 是被指定的<input>
         for (let i = 0; i < imgGallery.children.length; i++){
-            if(select == 'all'){ //被選擇的鏡框形狀
+            if(select == 'all'){ //顯示所有鏡框
                 imgGallery.children[i].classList.remove('hide')
-            }else if(select == imgGallery.children[i].children[0].classList[0]){ //顯示所有鏡框
+            }else if(select == imgGallery.children[i].children[0].classList[0]){ //被選擇的鏡框形狀
                 imgGallery.children[i].classList.remove('hide')
             }else{
                 imgGallery.children[i].classList.add('hide')
